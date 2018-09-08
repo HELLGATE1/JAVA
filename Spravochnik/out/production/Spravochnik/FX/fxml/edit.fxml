@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FX.Control.EditControl">
+   <children>
+      <FlowPane prefHeight="49.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label contentDisplay="CENTER" minWidth="80.0" prefHeight="21.0" prefWidth="80.0" text="%fio" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="tfFIO" prefHeight="31.0" prefWidth="300.0" promptText="%fio">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </TextField>
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="58.0" prefWidth="516.0">
+         <children>
+            <Label minWidth="60.0" prefHeight="21.0" prefWidth="80.0" text="%num">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="tfnumberphone" prefHeight="31.0" prefWidth="300.0" promptText="%num">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </TextField>
+         </children>
+      </FlowPane>
+      <FlowPane prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="butok" defaultButton="true" minWidth="100.0" mnemonicParsing="false" onAction="#ActionOK" prefWidth="100.0" text="%save">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="butcancel" cancelButton="true" minWidth="100.0" mnemonicParsing="false" onAction="#ActionClose" prefHeight="31.0" prefWidth="100.0" text="%cancel">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </children>
+</VBox>
